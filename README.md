@@ -18,7 +18,8 @@
 - [🚀 Getting Started](#-getting-started)
   - [Required Azure RBAC Roles](#step-5-required-azure-rbac-roles)
 - [📚 Learning Path](#-learning-path)
-- [🛠️ Troubleshooting & Support](#️-troubleshooting--support)
+- [� Industry Use Cases](#-industry-use-cases)
+- [�🛠️ Troubleshooting & Support](#️-troubleshooting--support)
 - [🤝 Community & Contributions](#-community--contributions)
 
 ---
@@ -343,9 +344,9 @@ Comprehensive evaluation, observability, and security testing for AI agents.
 
 ---
 
-### 💼 Industry Use Cases
+## 💼 Industry Use Cases
 
-For 49 real-world FSI use cases (banking, insurance, investment) mapped to each notebook, see [USE-CASES.md](USE-CASES.md).
+For 49 real-world FSI use cases (banking, insurance, investment) mapped to each notebook, see [💼 USE-CASES.md](USE-CASES.md).
 
 ---
 
