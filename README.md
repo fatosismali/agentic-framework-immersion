@@ -15,7 +15,7 @@
 
 - [🎯 Mission Statement](#-mission-statement)
 - [📁 Repository Structure](#-repository-structure)
-- [ Getting Started](#-getting-started)
+- [🚀 Getting Started](#-getting-started)
   - [Required Azure RBAC Roles](#step-5-required-azure-rbac-roles)
 - [📚 Learning Path](#-learning-path)
 - [🛠️ Troubleshooting & Support](#️-troubleshooting--support)
@@ -95,7 +95,7 @@ agentic-ai-immersion-day/
 
 ---
 
-##  Getting Started
+## 🚀 Getting Started
 
 ### Option A: Dev Container (Recommended) 🐳
 

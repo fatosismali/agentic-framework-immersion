@@ -1,6 +1,18 @@
 # 💼 Industry Use Cases
 
-This workshop features **49 real-world FSI (Financial Services Industry) use cases** across all notebooks, demonstrating practical AI agent applications for enterprise banking, insurance, and investment scenarios.
+[![Microsoft Foundry](https://img.shields.io/badge/Microsoft-Foundry-blue?style=for-the-badge&logo=microsoft)](https://ai.azure.com)
+[![Python](https://img.shields.io/badge/Python-3.10+-green?style=for-the-badge&logo=python)](https://python.org)
+[![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
+
+**49 Real-World FSI (Financial Services Industry) Use Cases**
+
+*Practical AI agent applications for enterprise banking, insurance, and investment scenarios mapped to each workshop notebook.*
+
+🔙 [Back to Main README](README.md)
+
+---
+
+This workshop features **49 real-world FSI use cases** across all notebooks, demonstrating practical AI agent applications for enterprise banking, insurance, and investment scenarios.
 
 | Use Case | Description | Technology | Notebook |
 |----------|-------------|------------|----------|
