@@ -15,8 +15,7 @@
 
 - [🎯 Mission Statement](#-mission-statement)
 - [📁 Repository Structure](#-repository-structure)
-- [💼 Industry Use Cases](#-industry-use-cases)
-- [🚀 Getting Started](#-getting-started)
+- [ Getting Started](#-getting-started)
   - [Required Azure RBAC Roles](#step-5-required-azure-rbac-roles)
 - [📚 Learning Path](#-learning-path)
 - [🛠️ Troubleshooting & Support](#️-troubleshooting--support)
@@ -96,78 +95,7 @@ agentic-ai-immersion-day/
 
 ---
 
-## 💼 Industry Use Cases
-
-This workshop features **49 real-world FSI (Financial Services Industry) use cases** across all notebooks, demonstrating practical AI agent applications for enterprise banking, insurance, and investment scenarios.
-
-| Use Case | Description | Technology | Notebook |
-|----------|-------------|------------|----------|
-| Financial Services Advisor | General banking, loan, and investment guidance with regulatory disclaimers | Azure AI Agents v2 | [1-basics.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/azure-ai-agents/1-basics.ipynb) |
-| Loan & Portfolio Calculator | Calculates loan payments, amortization schedules, analyzes financial data | Azure AI Agents v2, Code Interpreter | [2-code-interpreter.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/azure-ai-agents/2-code-interpreter.ipynb) |
-| Banking Document Search | Search loan policies, banking regulations, and compliance documents | Azure AI Agents v2, File Search | [3-file-search.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/azure-ai-agents/3-file-search.ipynb) |
-| Financial Market Research | Real-time market trends, interest rates, and financial news | Azure AI Agents v2, Bing Grounding | [4-bing-grounding.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/azure-ai-agents/4-bing-grounding.ipynb) |
-| Banking Products Catalog | Semantic search across banking products (loans, credit cards, accounts) | Azure AI Agents v2, Azure AI Search | [5-agents-aisearch.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/azure-ai-agents/5-agents-aisearch.ipynb) |
-| Insurance Claims Processing | Automated claims assessment, validation, and payout decisions | Azure AI Agents v2, Multi-Agent Workflows | [6-multi-agent-solution-with-workflows.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/azure-ai-agents/6-multi-agent-solution-with-workflows.ipynb) |
-| Platform Operations Assistant | Model discovery, deployment management, evaluation creation | Azure AI Agents v2, Foundry MCP Server | [7-mcp-tools.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/azure-ai-agents/7-mcp-tools.ipynb) |
-| Multi-Source Fraud Investigation | Investigate fraud using patterns, regulations, and procedures | Azure AI Agents v2, Foundry IQ | [8-foundry-IQ-agents.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/azure-ai-agents/8-foundry-IQ-agents.ipynb) |
-| Personalized Banking Assistant | Remembers customer preferences for personalized guidance | Azure AI Agents v2, Memory Search | [9-agent-memory-search.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/azure-ai-agents/9-agent-memory-search.ipynb) |
-| Financial Advisor Basics | Banking operations with account balance and loan inquiries | Agent Framework, Azure AI Agents | [1-azure-ai-basic.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/agent-framework/agents/azure-ai-agents/1-azure-ai-basic.ipynb) |
-| Investment Portfolio Management | Configurable advisor with portfolio allocation recommendations | Agent Framework, Explicit Settings | [2-azure-ai-with-explicit-settings.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/agent-framework/agents/azure-ai-agents/2-azure-ai-with-explicit-settings.ipynb) |
-| Persistent Financial Advisor | Reusable banking agent retaining configuration across sessions | Agent Framework, Existing Agent | [3-azure-ai-with-existing-ai-agent.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/agent-framework/agents/azure-ai-agents/3-azure-ai-with-existing-ai-agent.ipynb) |
-| Banking Operations Center | Account management, transaction history, loan calculations | Agent Framework, Function Tools | [4-azure-ai-with-function-tools.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/agent-framework/agents/azure-ai-agents/4-azure-ai-with-function-tools.ipynb) |
-| Financial Analytics Dashboard | Portfolio analysis, compound interest, loan amortization | Agent Framework, Code Interpreter | [5-azure-ai-with-code-interpreter.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/agent-framework/agents/azure-ai-agents/5-azure-ai-with-code-interpreter.ipynb) |
-| Loan Policy Document Search | Q&A over loan policies and compliance documents | Agent Framework, File Search | [6-azure-ai-with-file-search.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/agent-framework/agents/azure-ai-agents/6-azure-ai-with-file-search.ipynb) |
-| Financial Market Research Portal | Real-time stock news, economic trends, market information | Agent Framework, Bing Grounding | [7-azure-ai-with-bing-grounding.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/agent-framework/agents/azure-ai-agents/7-azure-ai-with-bing-grounding.ipynb) |
-| Documentation Research Assistant | Query external documentation via cloud-hosted tools | Agent Framework, Hosted MCP | [8-azure-ai-with-hosted-mcp.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/agent-framework/agents/azure-ai-agents/8-azure-ai-with-hosted-mcp.ipynb) |
-| Loan Application Discussion | Multi-turn conversations for loan applications and planning | Agent Framework, Thread Management | [9-azure-ai-with-existing-multi-turn-thread.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/agent-framework/agents/azure-ai-agents/9-azure-ai-with-existing-multi-turn-thread.ipynb) |
-| Customer KYC Profile Collection | Collect and track customer identification for compliance | Agent Framework, Context Providers | [1-simple-context-provider.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/agent-framework/context-providers/1-simple-context-provider.ipynb) |
-| Loan Underwriting & Risk Assessment | Review underwriting guidelines with intelligent reasoning | Agent Framework, Azure AI Search (Agentic), Foundry IQ | [2-azure-ai-search-context-agentic.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/agent-framework/context-providers/2-azure-ai-search-context-agentic.ipynb) |
-| Transaction Compliance Monitoring | Monitor transactions for regulatory violations with audit logs | Agent Framework, Agent Middleware | [1-agent-and-run-level-middleware.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/agent-framework/middleware/1-agent-and-run-level-middleware.ipynb) |
-| Trade Execution Logging | Track trade execution timing for regulatory reporting | Agent Framework, Function Middleware | [2-function-based-middleware.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/agent-framework/middleware/2-function-based-middleware.ipynb) |
-| Credit Limit Assessment | Assess credit limits with PII protection and request counting | Agent Framework, Class Middleware | [3-class-based-middleware.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/agent-framework/middleware/3-class-based-middleware.ipynb) |
-| Portfolio Rebalancing | Manage portfolio changes with trading window checks | Agent Framework, Decorator Middleware | [4-decorator-middleware.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/agent-framework/middleware/4-decorator-middleware.ipynb) |
-| Customer Service Message Filtering | Audit logging, PII redaction, sensitive query blocking | Agent Framework, Chat Middleware | [5-chat-middleware.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/agent-framework/middleware/5-chat-middleware.ipynb) |
-| Market Data Service Recovery | Handle external service failures with graceful fallbacks | Agent Framework, Exception Handling | [6-exception-handling-with-middleware.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/agent-framework/middleware/6-exception-handling-with-middleware.ipynb) |
-| Transaction Compliance Screening | Block prohibited transactions and rate limit requests | Agent Framework, Termination Logic | [7-middleware-termination.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/agent-framework/middleware/7-middleware-termination.ipynb) |
-| Market Data Enrichment | Append regulatory disclaimers to market data responses | Agent Framework, Result Override | [8-override-result-with-middleware.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/agent-framework/middleware/8-override-result-with-middleware.ipynb) |
-| Transaction Audit Trail | Track transaction counts and maintain audit data | Agent Framework, Shared State | [9-shared-state-middleware.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/agent-framework/middleware/9-shared-state-middleware.ipynb) |
-| Trade Execution Monitoring | Track trade execution latency with real-time monitoring | Agent Framework, Foundry Tracing | [1-agent-with-foundry-tracing.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/agent-framework/observability/1-agent-with-foundry-tracing.ipynb) |
-| Customer Service Monitoring | Monitor customer service interactions with automatic tracing | Agent Framework, Azure Monitor | [2-azure-ai-agent-observability.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/agent-framework/observability/2-azure-ai-agent-observability.ipynb) |
-| Loan Processing Pipeline Monitoring | Track loan stages: validation, credit check, approval | Agent Framework, Workflow Observability | [3-workflow-observability.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/agent-framework/observability/3-workflow-observability.ipynb) |
-| Compliance-Ready Conversation Audit | Store conversations in compliance-approved databases | Agent Framework, Custom Message Store | [1-custom-chat-message-store-thread.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/agent-framework/threads/1-custom-chat-message-store-thread.ipynb) |
-| Distributed Customer Session Management | Scale customer conversations across multiple instances | Agent Framework, Redis Message Store | [2-redis-chat-message-store-thread.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/agent-framework/threads/2-redis-chat-message-store-thread.ipynb) |
-| Insurance Claim Processing Continuity | Suspend and resume claim conversations across sessions | Agent Framework, Thread Suspend/Resume | [3-suspend-resume-thread.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/agent-framework/threads/3-suspend-resume-thread.ipynb) |
-| Credit Card Application Review | Real-time credit assessment with analyst and underwriter | Agent Framework, Streaming Workflows | [1-azure-ai-agents-streaming.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/agent-framework/workflows/1-azure-ai-agents-streaming.ipynb) |
-| Investment Portfolio Review | Real-time portfolio analysis and risk assessment | Agent Framework, Streaming Workflows | [2-azure-chat-agents-streaming.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/agent-framework/workflows/2-azure-chat-agents-streaming.ipynb) |
-| Loan Application Processing | Sequential processing with analyst and risk reviewer | Agent Framework, Sequential Workflows | [3-sequential-agents-loan-application.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/agent-framework/workflows/3-sequential-agents-loan-application.ipynb) |
-| Loan Advisory with Compliance | AI recommendations combined with regulatory disclosures | Agent Framework, Custom Executors | [4-sequential-custom-executors-compliance.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/agent-framework/workflows/4-sequential-custom-executors-compliance.ipynb) |
-| Credit Limit Review with Approval | AI proposes limits, human manager approves or adjusts | Agent Framework, Human-in-the-Loop | [5-credit-limit-with-human-input.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/agent-framework/workflows/5-credit-limit-with-human-input.ipynb) |
-| Large Transaction Authorization | Human escalation for high-value wire transfers | Agent Framework, Human Escalation | [6-workflow-as-agent-human-in-the-loop-transaction-review.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/agent-framework/workflows/6-workflow-as-agent-human-in-the-loop-transaction-review.ipynb) |
-| Investment Research with Compliance | Compliance oversight of research plans before execution | Agent Framework, Magentic Orchestration | [7-magentic-compliance-review-with-human-input.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/agent-framework/workflows/7-magentic-compliance-review-with-human-input.ipynb) |
-| Investment Research Report Generation | Multi-agent market research and quantitative analysis | Agent Framework, Magentic Multi-Agent | [8-magentic-investment-research.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/agent-framework/workflows/8-magentic-investment-research.ipynb) |
-| Customer Communication Quality | Ensure communications meet quality and compliance standards | Agent Framework, Reflection Pattern | [9-workflow-as-agent-reflection-pattern.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/agent-framework/workflows/9-workflow-as-agent-reflection-pattern.ipynb) |
-| Wealth Management Advisory Monitoring | Telemetry and tracing for investment guidance with audit | Azure AI Agents v2, OpenTelemetry | [1-telemetry.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/observability-and-evaluations/1-telemetry.ipynb) |
-| Loan Advisory Quality Testing | Evaluate agent responses for quality, safety, compliance | Azure AI Agents v2, Built-in Evaluators | [2-agent-evaluation.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/observability-and-evaluations/2-agent-evaluation.ipynb) |
-| Banking Assistant Evaluation | Evaluate tool-enabled agents for correct API usage | Azure AI Agents v2, Function Tools Evaluation | [3-agent-evaluation-with-function-tools.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/observability-and-evaluations/3-agent-evaluation-with-function-tools.ipynb) |
-| Banking Operations Tool Validation | Validate correct tool selection for banking operations | Azure AI Agents v2, Tool Call Accuracy | [4-tool-call-accuracy-evaluation.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/observability-and-evaluations/4-tool-call-accuracy-evaluation.ipynb) |
-| Banking AI Security Assessment | Identify vulnerabilities through adversarial attack simulations | Azure AI Agents v2, Red Team Testing | [5-red-team-security-testing.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/observability-and-evaluations/5-red-team-security-testing.ipynb) |
-
-### 🔑 Key Patterns Demonstrated
-
-| Pattern | Business Application | Count |
-|---------|---------------------|-------|
-| **Human-in-the-Loop** | Approval workflows, compliance reviews | 4 |
-| **Streaming** | Real-time updates, customer chat | 2 |
-| **Sequential Pipeline** | Application processing, compliance checks | 2 |
-| **Multi-Agent (Magentic)** | Research analysis, compliance review | 2 |
-| **Reflection** | Communication quality improvement | 1 |
-| **Middleware** | Audit trails, compliance screening, filtering | 9 |
-| **Evaluation** | Agent quality, tool accuracy, security | 5 |
-| **Foundry IQ** | Agentic retrieval with knowledge bases | 2 |
-
----
-
-## 🚀 Getting Started
+##  Getting Started
 
 ### Option A: Dev Container (Recommended) 🐳
 
@@ -331,7 +259,7 @@ Follow this structured learning path to master Microsoft Foundry and AI Agents:
 
 The **Microsoft Agent Framework** is an open-source SDK that unifies Semantic Kernel and AutoGen into the next-generation foundation for AI agent development. It offers **AI Agents** for autonomous decision-making with tool integration, and **Workflows** for orchestrating complex multi-agent processes with type safety and checkpointing.
 
-📖 [Official Documentation](https://learn.microsoft.com/en-us/agent-framework/overview/agent-framework-overview) •  [Complete Guide](agent-framework/README.md)
+📖 [Official Documentation](https://learn.microsoft.com/en-us/agent-framework/overview/agent-framework-overview) • 🔗 [GitHub Repository](https://github.com/microsoft/agent-framework) • 📚 [Complete Guide](agent-framework/README.md)
 
 #### 🤖 Azure AI Agents (`agents/azure-ai-agents/`)
 
@@ -413,6 +341,8 @@ Comprehensive evaluation, observability, and security testing for AI agents.
 
 📖 [Complete Guide](observability-and-evaluations/README.md)
 
+> 💼 **Industry Use Cases**: For 49 real-world FSI use cases (banking, insurance, investment) mapped to each notebook, see [USE-CASES.md](USE-CASES.md).
+
 ---
 
 ## 🛠️ Troubleshooting & Support
@@ -434,6 +364,7 @@ Comprehensive evaluation, observability, and security testing for AI agents.
 |----------|------|
 | **Microsoft Foundry Docs** | [learn.microsoft.com/azure/ai-foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/) |
 | **Agent Framework Docs** | [learn.microsoft.com/agent-framework](https://learn.microsoft.com/en-us/agent-framework/overview/agent-framework-overview) |
+| **Agent Framework GitHub** | [github.com/microsoft/agent-framework](https://github.com/microsoft/agent-framework) |
 | **Azure AI Services** | [learn.microsoft.com/azure/ai-services](https://learn.microsoft.com/azure/ai-services/) |
 | **Video Tutorials** | [AI Show](https://learn.microsoft.com/en-us/shows/ai-show/) |
 | **GitHub Issues** | [Report bugs or request features](https://github.com/dhangerkapil/agentic-ai-immersion/issues) |
