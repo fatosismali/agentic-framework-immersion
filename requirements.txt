@@ -673,3 +673,6 @@ zipp==3.23.0
 # The following packages are considered to be unsafe in a requirements file:
 setuptools==80.9.0
     # via jupyterlab
+
+
+azure-identity
